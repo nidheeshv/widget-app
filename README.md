@@ -1,3 +1,16 @@
+Please implement the simple application in React. Requirements are in the picture, but here are some more comments for clarity:
+
+The template requests when creating a new widget, the value name should be entered (not the value). This way the value is bound to the widget.
+There can be more than 1 value and more than 2 widgets to track
+The template requests that every time the create widget button is clicked, a new widget should be created. We could see more than 1 widget of the same type, and each of them could track a different value or the same value.
+For example:
+
+User creates new widget (widget-name=’widget 1’, value-name=’value 1’, type=’input’)
+User creates new widget (widget-name=’widget 2’, value-name=’value 1’, type=’buttons’)
+User creates new widget (widget-name=’widget 3’, value-name=’value 1’, type=’input’)
+User creates new widget (widget-name=’widget 4’, value-name=’value 2’, type=’input’)
+Now, the page should render 4 widgets. When user clicks a button in widget 2, the value shown in widget 1 and 3 should also both change. The value in widget 4 will remain unchanged
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

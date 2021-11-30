@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import WidgetForm from "./components/WidgetForm";
+import WidgetView from "./components/WidgetView";
+import GlobalStateView from "./components/GlobalStateView";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>widget app</h1>
+      <div className="flex justify-around max-h-96">
+        <div className="column bg-gray-50">
+          <GlobalStateView />
+        </div>
+        <div className="column">
+          <WidgetView />
+        </div>
+      </div>
+      <WidgetForm />
     </div>
   );
-}
+};
 
 export default App;
