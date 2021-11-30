@@ -7,7 +7,9 @@ import "./App.css";
 const App = () => {
   return (
     <div className="container">
-      <h1>widget app</h1>
+      <h1 className="text-2xl font-bold leading-7 text-gray-900 sm:text-3xl sm:truncate">
+        Widget app
+      </h1>
       <div className="flex justify-around max-h-96">
         <div className="column bg-gray-50">
           <GlobalStateView />

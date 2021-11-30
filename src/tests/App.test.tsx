@@ -9,6 +9,6 @@ test("renders widget app", () => {
       <App />
     </GlobalStateContextProvider>
   );
-  const linkElement = screen.getByText(/widget app/i);
+  const linkElement = screen.getByText(/Widget app/i);
   expect(linkElement).toBeInTheDocument();
 });
